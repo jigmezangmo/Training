@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    
+     /*
+    justify-content:space-around / flex-end / flex-start / space-between / space-evenly; 
+    flex-direction: row / column;
+    */
+}
