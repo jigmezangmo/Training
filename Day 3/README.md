@@ -1,1 +1,1 @@
-Today in the morning i completed the flexbox froggy game. Then worte the essay till lunch. After lunch, i completed three topics as mentioned ( 1- Template Areas, 2- Auto-fit and minmax and Implicit rows ). Learned the difference between auto-fit and auto-fill.
+Today in the morning i completed the flexbox froggy game. Then wrote the essay till lunch. After lunch, i completed three topics as mentioned ( 1- Template Areas, 2- Auto-fit and minmax and Implicit rows ). Learned the difference between auto-fit and auto-fill.
