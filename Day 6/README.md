@@ -20,3 +20,20 @@
 
 ![myimage-alt-tag](C:\Users\MadMix Studios\Training\Day 6\logic.png)
 
+## Memory Classification
+
+* Registers
+* Cache
+* Primary Memory (RAM)
+* Secondary Memory (Hard Disks etc.)
+
+## High Level Language
+
+* Compiler -> Machine specific assembler -> Machine language (Fortran, Algol in 1950's and 60's)
+* Translate to machine code using "Assembler"
+
+## Stack & Heap
+
+* Stack and Heap Memory Space used by programs
+* Allocated on RAM
+* Stack us used for static memory allocation and Heap for dynamic memory allocation
