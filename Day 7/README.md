@@ -17,12 +17,11 @@ Chakra - IE
 
 ## What JavaScript can DO & CAN'T
 
-| What can it do in browser             | What it can't do                                             |
-|---------------------------------------| -------------------------------------------------------------|
-| Add new HTML to the page, change the  | No direct to the OS function                                 |
-|existing content, modify styles.  
-|React tp user aticons.                 | Different tabs/windows generally do not know about each other|
-|                                       | 
+| What can it do in browser | What it can't do |
+|---------------------------| -----------------|
+| Add new HTML to the page, change the existing content, modify styles.  | No direct to the OS function |
+|React tp user aticons. | Different tabs/windows generally do not know about each other|
+
 
 ## Supersets
 
