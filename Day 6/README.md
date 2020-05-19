@@ -2,11 +2,12 @@
 
 ## Evolution of Computing Devices
 
-* 1940 - * ENIAC * (size of 3-4 double decker buses)
-* 1947 - * Transistors * (size of the vaccum tubes and consumed less power)
-* 1958 - * Integrated Circuits * (Jack Kilby and Robert Noyce)
-* 1968 - * Intel Electronics * (Robert Noyce)
-
+``` 
+ 1940 -  ENIAC (size of 3-4 double decker buses)
+ 1947 -  Transistors (size of the vaccum tubes and consumed less power)
+ 1958 -  Integrated Circuits (Jack Kilby and Robert Noyce)
+ 1968 -  Intel Electronics (Robert Noyce)
+```
 ## Binary Number System
 
 * Base 2 number System
@@ -18,7 +19,7 @@
 
 ## Logic Gates
 
-![myimage-alt-tag](C:\Users\MadMix Studios\Training\Day 6\logic.png)
+``` ![myimage-alt-tag](C:\Users\MadMix Studios\Training\Day 6\logic.png) ```
 
 ## Memory Classification
 
