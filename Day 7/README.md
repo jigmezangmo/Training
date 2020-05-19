@@ -20,7 +20,7 @@ Chakra - IE
 | What can it do in browser | What it can't do |
 |---------------------------| -----------------|
 | Add new HTML to the page, change the existing content, modify styles.  | No direct to the OS function |
-|React tp user aticons. | Different tabs/windows generally do not know about each other|
+|React to user aticons. | Different tabs/windows generally do not know about each other|
 
 
 ## Supersets
