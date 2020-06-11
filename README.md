@@ -236,6 +236,7 @@
     *   Stack us used for static memory allocation and Heap for dynamic memory allocation
 
 
+
 # Java Script Introduction
 
 * Java Script adds programming to our web pages. Works with HTML and CSS to make up the website.
@@ -454,15 +455,15 @@
 
 ## Changing the Value of an Attributes
 
-```
+`
     Syntax: document.getElementById(id).attribute= new value
-```
+`
 
 ## Changing HTML Style
 
-```
+`
     Syntax: document.getElementById(id).style.property= new style
-```
+`
 
 # Using Events
 
