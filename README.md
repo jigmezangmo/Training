@@ -455,15 +455,15 @@
 
 ## Changing the Value of an Attributes
 
-`
+```
     Syntax: document.getElementById(id).attribute= new value
-`
+```
 
 ## Changing HTML Style
 
-`
+```
     Syntax: document.getElementById(id).style.property= new style
-`
+```
 
 # Using Events
 
