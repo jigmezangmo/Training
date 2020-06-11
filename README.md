@@ -112,9 +112,9 @@
 # Align-content
 
 ```
-.container {
-  align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
-}
+    .container {
+    align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+    }
 ```
 
 * flex-start / start: items packed to the start of the container. 
@@ -141,9 +141,9 @@ stretch (default): lines stretch to take up the remaining space
 * Defines the element as a grid container and establishes a new grid formatting context for its contents.
 
 ```
-.container {
-  display: grid | inline-grid;
-}
+    .container {
+    display: grid | inline-grid;
+    }
 ```
 
 * Values:
