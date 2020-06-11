@@ -1,10 +1,67 @@
-# Training
-Codes for training
+# REPORTS 
 
-##Test Changes
+## Flexbox Layout Module
 
-<p><h2>What is Lorem Ipsum?</h2> <br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
-<p><h1>Why do we use it?</h2> <br>
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+* The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
 
+## Display
+*  This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.
+
+```
+<html>
+    <head>
+        <link rel = "stylesheet" href = "style.css">
+    <head>
+    <body>
+        <nav class = "container">
+            <div> Home </div>
+            <div> Search </div>
+            <div> Logout </div>
+        </nav>
+    </body>
+</html>
+
+CSS
+    .container {
+        display: flex;
+    }
+```
+
+## Flex-direction
+* It establishes the main-axis, thus defining the direction flex items are placed in  the flex container.
+
+```
+.container {
+  flex-direction: row | row-reverse | column | column-reverse;
+}
+```
+* row (defaulf): left to right
+* row-reverse: right to left
+* column: top to bottom
+* column-reverse: bottom to top
+
+## Flex-wrap
+* By default, flex items will all try to fit onto one line.
+
+```
+.container {
+  flex-wrap: nowrap | wrap | wrap-reverse;
+}
+```
+
+* nowrap (default): all flex items will be on one line
+* wrap: flex items will wrap onto multiple lines, from top to bottom.
+* wrap-reverse: flex items will wrap onto multiple lines from bottom to top.
+
+## Flex-flow
+*   This is a shorthand for the flex-direction and flex-wrap properties, which together define the 
+    flex container's main and cross axes. The default value is row nowrap.
+
+```
+.container {
+  flex-flow: column wrap;
+}
+```
+
+## Justify-content
+* This 
