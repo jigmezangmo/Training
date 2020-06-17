@@ -838,7 +838,7 @@ console.log(isDesigner);
 
 
 
-## CODING CHALLENGE 2
+## CODING CHALLENGE 3
 
 ``` 
 John and his family went on a holiday and went to 3
