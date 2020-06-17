@@ -487,6 +487,405 @@
 
 
 
+## Operator precedence
+
+ ```
+    var now = 2018;
+    var yearJigme = 1995;
+    var fullAge = 18;
+
+// Multiple operators
+    var isFullAge = now - yearJigme >= fullAge;
+    console.log(isFullAge);
+
+// Grouping 
+    var ageJigme = now - yearJigme;
+    var ageZangmo = 29;
+    var average = (ageJigme + ageZangmo) / 2;
+    console.log(average);
+
+// Multiple assignments
+    var x, y;
+    x = y = (3 + 5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // 26
+    console.log(x, y);
+
+// More operators
+    x *= 2;
+    console.log(x);
+    x += 10;
+    console.log(x);
+    x++;
+    console.log(x);
+```
+
+
+##  CODING CHALLENGE 1
+
+```   
+    Mark and John are trying to compare their BMI (Body 
+    Mass Index), which is calculated using the formula:
+    BMI = mass / height^2 = mass / (height * height).
+    (mass in kg and height in meter).
+
+    1. Store Mark's and John's mass and height in
+    variables
+    2. Calculate both their BMIs
+    3. Create a boolean variable containing information
+    about whether Mark has a higher BMI than John.
+    4. Print a string to the console containing the
+    variable from step 3. (Something like "Is Mark's BMI 
+    higher than John's? true").
+ 
+
+var massMark = 78; // kg
+var heightMark = 1.69;// meter
+
+var massJohn = 92;// kg
+var heightJohn = 1.95;// meter
+
+markBMI = massMark / (heightMark * heightMark);
+johnBMI = massJohn / (heightJohn * heightJohn);
+console.log(markBMI, johnBMI)
+
+higherBMI = markBMI > johnBMI;
+
+console.log ('Is Mark\'s BMI higher than John\'s? ' + higherBMI);
+
+```
+
+
+## If / else statements
+
+```
+var firstName = 'Jigme';
+var civilStatus = 'single';
+
+if (civilStatus === 'married') {
+    console.log(firstName + ' is married!');
+} else {        
+    console.log(firstName + ' will hopefully marry soon :)');
+
+}
+
+var isMarried = true;
+if (isMarried){
+    console.log(firstName + ' is married!');
+}else {
+    console.log(firstName + ' will hopefully marry soon :)');
+}
+    
+
+var massMark = 78; // kg
+var heightMark = 1.69;// meter
+
+var massJohn = 92;// kg
+var heightJohn = 1.95;// meter
+
+var markBMI = massMark / (heightMark * heightMark);
+var johnBMI = massJohn / (heightJohn * heightJohn);
+
+if (markBMI > johnBMI){
+    console.log('Mark\' BMI is higher than John\'s.');
+} else {
+    console.log('John\' BMI is higher than Mark\'s');
+}
+```
+
+
+## Boolean Logic
+
+ ``` 
+ var firstName = 'Jigme';
+ var age = 20;
+
+ if (age < 15) {
+     console.log(firstName + ' is a girl.');
+ } else if (age >= 15 && age < 20){
+     console.log(firstName + ' is a teenager.');
+ } else if (age >= 20 && age < 30){
+     console.log(firstName + ' is a young girl.');
+ } else {
+     console.log(firstName + ' is a woman.');
+ }
+
+```
+
+
+
+## The Ternary Operator and Switch Statements
+
+```
+var firstName = 'Jigme';
+var age = 25;
+
+//Ternary operator
+age >= 27 ? console.log(firstName + ' drinks beer.')
+: console.log(firstName + ' drink juice.');
+
+var drink = age >= 27 ? 'beer' : 'juice';
+console.log(drink);
+
+// Switch Statement
+var job = 'designer';
+switch (job) {
+    case 'teacher':
+        console.log(firstName + ' teaches kids how to code.');
+        break;
+    case 'driver':
+        console.log(firstName + ' drives an uber in Lisbon.');
+        break;
+    case 'designer':
+        console.log(firstName + ' designs beautiful websites.');
+        break;
+    default:
+        console.log(firstName + ' does something else.');
+    
+}
+
+
+
+age = 25;
+
+switch(true){
+    case (age >= 15 && age < 20):
+        console.log(firstName + ' is a teenager.');
+    case (age >= 20 && age < 30):
+        console.log(firstName + ' is a young girl.');
+    default:
+        console.log(firstName + ' is a woman.');
+}
+
+```
+
+
+
+## Truthy and Falsy values and equality operators
+
+```
+ 
+// falsy values: undefined, null, 0, '', NaN
+// truthy values: NOT falsy values
+
+var height;
+height = 23;
+
+if(height){
+    console.log('variable is defined.');
+} else {
+    console.log('variable has been not defined.');
+}
+
+// Equality operators
+if(height === '23'){
+    console.log('The == operator does type coercion!');
+}
+
+```
+
+## CODING CHALLENGE 2
+
+``` 
+John and Mike both play basetball in different teams. 
+In the latest 3 games, John's team scored 89, 
+120 and 103 points, while Mike's team scored 
+116, 94 and 123 points.
+
+1. Calculate the average score for each team
+2. Decide which teams wins in average (highest
+    average score), and print the winner to the console.
+    Also incluce the average score in the output.
+3. Then change the scores to show different winners.
+    Don't forget to take into account there might be a
+    draw (the same average score)
+
+4. EXTRA: Mary also plays baseketball, and her team
+    scored 97, 134 and 105 points. Like before, log the
+    average winner to the console. HINT: you will need
+    the && operator to take the decision.
+5. Like before, change the scores to genereate
+    different winners, keeping in mind there might be
+    draws.
+
+
+
+var johnAverage = (89 + 120 + 103) / (3);
+var mikeAverage = (116 + 94 + 123) / (3);
+var maryAverage = (97 + 134 + 105) / (3);
+console.log(johnAverage, mikeAverage, maryAverage);
+
+if (johnAverage > mikeAverage && johnAverag e > maryAverage){
+    console.log('John\'s team wins with ' + johnAverage + ' points');
+
+} else if (mikeAverage > johnAverage && mikeAverage > maryAverage){
+    console.log('Mike\'s teams wins with ' + mikeAverage + ' points');
+
+} else if (maryAverage > johnAverage && maryAverage > mikeAverage){
+    console.log('Mary\'s teams wins with ' + maryAverage + ' points');
+
+} else {
+    console.log('There is a draw');
+}
+
+
+
+if (johnAverage > mikeAverage){
+    console.log('John\'s team wins with ' + johnAverage + ' points');
+} else if (mikeAverage > johnAverage){
+    console.log('Mike\'s teams wins with ' + mikeAverage + ' points');
+} else {
+    console.log('There is a draw');
+}
+
+```
+
+
+## Functoins
+
+```
+function calculatedAge(birthYear){
+    return 2020 - birthYear;
+}
+var ageJigme = calculatedAge(1995);
+var ageYeshi = calculatedAge(1992);
+var ageYangden = calculatedAge(1997);
+console.log (ageJigme, ageYangden, ageYeshi);
+
+function yearUntilRetirement(year, firstName){
+    var age = calculatedAge(year);
+    var retirement = 20 - age;
+
+    if (retirement > 0) {
+        console.log(firstName + ' retires in '
+        + retirment + ' years.');
+    } else {
+        console.log(firstName + ' is already retired.')
+    }
+}
+
+yearUntilRetirement(1995, ' Jigme');
+yearUntilRetirement(1992, ' Yeshi');
+yearUntilRetirement(1997, ' Yangden');
+
+```
+
+
+
+## Function Statements and Expressions
+
+```  
+//  Function declaration
+// function whatDoYouDo(job, firstName) {}
+
+// Function expression
+var whatDoYouDo = function(job, firstName) {
+    switch(job){
+        case 'teacher':
+            return firstName + ' teaches kids how to code';
+
+        case 'driver':
+            return firstName + ' dirves a cab in lisbon';
+
+        case 'designer':
+            return firstName + ' designes the website';
+
+        default:
+            return firstName + ' does something else';
+    }
+}
+
+console.log(whatDoYouDo('teacher', 'Jigme'));
+console.log(whatDoYouDo('designer', 'Yeshi'));
+console.log(whatDoYouDo('driver', ' Yangden'))
+
+```
+
+
+## Arrays
+
+```
+//  Initialize new array
+var names = ['Jigme', 'Yeshi', 'Pema'];
+var years = new Array(1995, 1993, 1989);
+
+console.log(names[0]);
+console.log(name.length);
+
+// Mutate array data
+names[1] = 'Ben';
+names[names.length] = 'Mary';
+console.log(names);
+ 
+
+//  Different data types
+var jigme = ['Jigme', 'Yeshi', 'Pema', 1990, 'designer', false];
+
+jigme.push('blue'); //adds the elements to end of array
+jigme.push('green');
+jigme.unshift('Ms.'); //adds the elements to the  start of array
+console.log(jigme);
+
+jigme.pop(); // deletes the element from bottom
+jigme.shift(); //deletes the elements from start
+console.log(jigme);
+
+
+console.log(jigme.indexOf(24));
+
+var isDesigner = jigme.indexOf('designer') === -1 ? 'Jigme is NOT a designer' : 'Jigme IS a designer';
+console.log(isDesigner);
+
+```
+
+
+
+## CODING CHALLENGE 2
+
+``` 
+John and his family went on a holiday and went to 3
+different restaurants. The bills were $124, $48 and 
+$268.
+
+To tip the waiter a fair amount, John created a
+simple tip calculator (as a function). He likes to
+tip 20% of the bill when the bill is less than $50,
+15% when the bill is between $50 and $200, and 10%
+if the bill is more than $200.
+
+In the end, John would like to have 2 arrays:
+1) Containing all three tips (one for each bill)
+2) Containing all three final paid amounts (bill +
+    tip).
+
+(NOTE: To calculate 20% of a value, simply multiply
+    if with 20/100 = 0.2)
+
+
+function tipCalculator(bill) {
+    var percentage;
+    if(bill < 50){
+        percentage = .2;
+    }else if ( bill >= 50 && bill < 200) {
+        percentage = .15;
+    }else {
+        percentage = .1;
+    }
+    return percentage * bill;
+}
+
+console.log(tipCalculator(10));
+
+var bills = [124, 48, 268];
+var tips = [tipCalculator(bills[0]),
+            tipCalculator(bills[1]),
+            tipCalculator(bills[2])];
+
+var finalValues = [bills[0] + tips[0],
+                    bills[1] + tips[1],
+                    bills[2] + tips[2]];
+
+console.log(tips, finalValues);
+
+```
 
 
 
