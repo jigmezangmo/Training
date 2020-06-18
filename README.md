@@ -888,6 +888,164 @@ console.log(tips, finalValues);
 ```
 
 
+## Objects and properties
+
+```
+// Object Literal
+var jigme = {
+    firstName : 'Jigme',
+    lastName : 'Zangmo',
+    birthYear : 1996,
+    family : ['Tshewang', 'Yangden', 'Thinley', 'Pema'], // can add other elements sunch as array
+    job : 'IT',
+    isMarried : false 
+};
+
+console.log(jigme.firstName); // first way to retirve elements
+console.log(jigme['lastName']); // second way to retrive elements
+var x = 'birthYear';
+console.log(jigme[x]); // third way to retrive elements
+
+jigme.job = 'designer';
+jigme['isMarried'] = true;
+console.log(jigme);
+
+//new Object syntax
+var pema = new Object();
+pema.firstName ='Pema';
+pema.birthYear = 1995;
+pema['lastName'] = ' Yangden';
+console.log(pema);
+
+ ```
+
+
+
+## Objects and Methods
+
+* JavaScript methods are actions that can be performed on objects. 
+* A JavaScript method is a property containing a function definition.
+* Methods are functions stored as object properties.
+
+```
+var jigme = {
+    firstName : 'Jigme',
+    lastName : 'Zangmo',
+    birthYear : 1996,
+    family : ['Tshewang', 'Yangden', 'Thinley', 'Pema'], // can add other elements sunch as array
+    job : 'IT',
+    isMarried : false,
+    calcAge : function(){
+        this.age = 2020 - this.birthYear;
+    }
+};
+jigme.calcAge();
+console.log(jigme);
+
+```
+
+
+
+## CODING CHALLENGE 4
+
+ ```  
+ Let's remember the first coding challenge where Mark and John compared their BMIs. Let's now implement the same functionality with objects and methods.
+
+  1. For each of them, create an object with
+  properties for their full name, mass, and height
+  2. Then, add a method to each object to calculate
+  the BMI. Save the BMI to the object and also return
+  it from the method.
+  3. In the end, log to the console who has the
+  highest BMI, together with the full name and the
+  respective BMI. Don't forget they might have the 
+  same BMI.
+
+  Remember: BMI = mass / height^2 = mass / (height * height).
+  (mass in kh and height in meter).
+  
+ var Mark = {
+     fullName : 'Mark Zam',
+     mass : 89,
+     height : 1.65,
+    calcBMI : function(){
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+ }
+
+ var john = {
+    fullName : 'John Zam',
+    mass : 98,
+    height : 1.72,
+   calcBMI : function(){
+       this.bmi = this.mass / (this.height * this.height);
+       return this.bmi;
+   }
+}
+
+john.calcBMI();
+Mark.calcBMI();
+
+if(john.calcBMI() > Mark.calcBMI()) {
+    console.log( john.fullName + ' has a higher BMI of ' + john.bmi);
+} else if (Mark.bmi > john.bmi){
+    console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi);
+} else{
+    console.log('They have the same BMI');
+}
+
+```
+
+
+## Loops and iteration 
+
+* JavaScript loops are used to repeatedly run a block of code - until a certain condition is met. When developers talk about iteration or iterating over, say, an array, it is the same as looping. JavaScript offers several options to repeatedly run a block of code, including while, do while, for and for-in.
+ 
+```
+for (var i = 1; i <= 20; i += 2) {
+    console.log(i);
+}
+// i = 0, 0 < 10 true, log i to console, i++
+// i = 0, 1 < 10 true, log i to console, i++
+//.....
+// i = 0, 9 < 10 true, log i to console, i++
+// i = 0, 10 < 10 FALSE, exit the loop!
+
+var person = ['Jigme', 'Zam', 1996, 'designer', false, 'blue'];
+for (var i = 0; i < person.length; i++){
+    console.log(person[i]);
+}
+
+//while loop
+var i = 0;
+while (i < person.length){
+    console.log(person[i]);
+    i++;
+}
+
+
+//continue and break statements
+var person = ['Jigme', 'Zam', 1996, 'designer', false, 'blue'];
+for (var i = 0; i < person.length; i++){
+    if (typeof person[i] !== 'string') continue;
+    console.log(person[i]);
+}
+
+person.forEach(p =>{   // other way to retrive elements
+    if (typeof p !== 'string' ){
+        console.log(p)
+    }
+        
+})
+
+for (var i = 0; i < person.length; i++) {
+    if (typeof person[i] !== 'string') break;
+    console.log(person[i]);
+}
+
+```
+
 
 
 
